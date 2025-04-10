@@ -116,7 +116,7 @@
 
 7)))🔹 Push Branch
 ============================================================
-                git push origin <branch-name>
+                git push origin-adress <branch-name>
                 👉 Pushes local branch to the remote.
 
 
@@ -154,3 +154,15 @@
         git push origin --delete <branch-name>
         👉 Deletes a branch on the remote repository.
 
+
+
+10)))  see the local head branch and commit status
+================================================
+
+   =>     git log --all --graph
+           
+           o/p=> commit eafdd6ae492a0608146a5364879dd3f5808e4e27 (HEAD -> main, jafran)
+                        Author: AkMJafran <mohamedjafran300@gmail.com>
+                        Date:   Thu Apr 10 13:18:14 2025 +0530
+
+                            new git branch open
