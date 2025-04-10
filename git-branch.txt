@@ -1,0 +1,156 @@
+
+
+
+1)))🔹 View Branches
+==========================================================
+
+    git branch
+    👉 Lists all local branches.
+
+
+
+    git branch -r
+    👉 Lists all remote branches.
+
+
+    git branch -a
+    👉 Lists all branches, local and remote.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2)))🔹 Create Branch
+=======================================================
+
+    git branch <branch-name>
+    👉 Creates a new branch (does not switch to it).
+
+
+
+3)))🔹 Switch Branch   (go to another branch)
+===========================================
+    git checkout <branch-name>
+    👉 Switches to another branch (older syntax).
+
+    git switch <branch-name>
+    👉 Switches to another branch (newer, easier syntax).
+
+
+
+                        ||
+                        ||
+                        ||
+                        \/
+
+
+
+
+################################################################
+2 && 3)))🔹 Create and Switch
+
+    git checkout -b <branch-name>
+    👉 Creates a new branch and switches to it (older syntax).
+
+    git switch -c <branch-name>
+    👉 Same as above, using newer syntax.
+#################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+4)))🔹 Rename Branch
+============================================================
+
+        git branch -m <new-name>
+        👉 Renames current branch.
+
+        git branch -m <old-name> <new-name>
+        👉 Renames a specific branch.
+
+
+
+5)))🔹 Delete Branch
+============================================================
+            git branch -d <branch-name>
+            👉 Deletes a branch safely (if merged).
+
+            git branch -D <branch-name>
+            👉 Force-deletes a branch.
+
+
+
+
+
+
+6)))🔹 Merge Branch
+============================================================
+            git merge <branch-name>
+            👉 Merges the specified branch into the current branch.
+
+
+
+
+
+
+7)))🔹 Push Branch
+============================================================
+                git push origin <branch-name>
+                👉 Pushes local branch to the remote.
+
+
+
+
+
+8)))🔹 Track Remote Branch
+============================================================
+
+        ### "Track branch" in Git means linking a local branch to a remote branch, 
+            so Git knows where to pull and push changes.
+
+                    git checkout --track origin/<branch-name>
+                    👉 Checks out a remote branch and tracks it.
+
+
+
+                =>👉 This does 2 things:
+
+                        Creates a local branch called feature-login.
+                        Links it to the remote branch origin/feature-login.
+
+
+
+        benefits of tracking
+        --------------------------------------
+                =>git pull 
+                =>git push 
+
+
+
+
+9)))🔹 Delete Remote Branch
+============================================================
+        git push origin --delete <branch-name>
+        👉 Deletes a branch on the remote repository.
+
